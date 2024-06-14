@@ -1,0 +1,5 @@
+top=top
+
+M (SW0)
+rst (BTNC)
+seg7_out (SEG0G, SEG0F, SEG0E, SEG0D, SEG0C, SEG0B, SEG0A)

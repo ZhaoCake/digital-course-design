@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Jun  6 17:49:58 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : course_design
+Top-level Entity Name : top
+Family : MAX 10
+Total logic elements : 22
+    Total combinational functions : 22
+    Dedicated logic registers : 13
+Total registers : 13
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

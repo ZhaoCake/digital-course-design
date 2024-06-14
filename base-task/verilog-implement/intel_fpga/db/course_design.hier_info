@@ -1,0 +1,58 @@
+|top
+clk => clk.IN1
+rst => rst.IN1
+M => M.IN1
+seg7_out[0] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+seg7_out[1] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+seg7_out[2] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+seg7_out[3] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+seg7_out[4] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+seg7_out[5] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+seg7_out[6] << bit_3_to_seg7:bit_3_to_seg7_inst.seg7_out
+
+
+|top|state_convert:state_convert_inst
+clk => signal.CLK
+clk => timer[0].CLK
+clk => timer[1].CLK
+clk => timer[2].CLK
+clk => timer[3].CLK
+clk => timer[4].CLK
+clk => timer[5].CLK
+clk => timer[6].CLK
+clk => timer[7].CLK
+clk => timer[8].CLK
+CR => data[0]~reg0.PRESET
+CR => data[1]~reg0.PRESET
+CR => data[2]~reg0.PRESET
+CR => signal.ACLR
+CR => timer[0].ACLR
+CR => timer[1].ACLR
+CR => timer[2].ACLR
+CR => timer[3].ACLR
+CR => timer[4].ACLR
+CR => timer[5].ACLR
+CR => timer[6].ACLR
+CR => timer[7].ACLR
+CR => timer[8].ACLR
+M => data.OUTPUTSELECT
+M => data.OUTPUTSELECT
+M => data.OUTPUTSELECT
+data[0] <= data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|bit_3_to_seg7:bit_3_to_seg7_inst
+binary_in[0] => Decoder0.IN2
+binary_in[1] => Decoder0.IN1
+binary_in[2] => Decoder0.IN0
+seg7_out[0] <= seg7_out.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out[1] <= seg7_out.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
