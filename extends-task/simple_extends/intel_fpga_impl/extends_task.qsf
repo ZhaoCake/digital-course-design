@@ -1,0 +1,104 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+# Date created = 13:16:52  June 15, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		extends_task_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M02SCM153C8G
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:16:52  JUNE 15, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 153
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_timing_analysis
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_formal_verification
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE bit_4_to_seg7.v
+set_global_assignment -name VERILOG_FILE state_convert.v
+set_global_assignment -name VERILOG_FILE top.v
+set_location_assignment PIN_J12 -to M
+set_location_assignment PIN_J5 -to clk
+set_location_assignment PIN_H11 -to mode
+set_location_assignment PIN_E14 -to mode_led
+set_location_assignment PIN_J9 -to rst
+set_location_assignment PIN_G5 -to seg7_out[6]
+set_location_assignment PIN_F5 -to seg7_out[5]
+set_location_assignment PIN_G2 -to seg7_out[4]
+set_location_assignment PIN_J2 -to seg7_out[3]
+set_location_assignment PIN_K2 -to seg7_out[2]
+set_location_assignment PIN_D2 -to seg7_out[1]
+set_location_assignment PIN_E1 -to seg7_out[0]
+set_location_assignment PIN_B1 -to seg_en[1]
+set_location_assignment PIN_E2 -to seg_en[0]
+set_location_assignment PIN_K14 -to spd_down
+set_location_assignment PIN_J11 -to spd_up
+set_location_assignment PIN_C2 -to speed_disp[6]
+set_location_assignment PIN_C1 -to speed_disp[5]
+set_location_assignment PIN_N1 -to speed_disp[4]
+set_location_assignment PIN_P1 -to speed_disp[3]
+set_location_assignment PIN_P2 -to speed_disp[2]
+set_location_assignment PIN_A2 -to speed_disp[1]
+set_location_assignment PIN_A3 -to speed_disp[0]
+set_location_assignment PIN_K11 -to state_led[2]
+set_location_assignment PIN_L11 -to state_led[1]
+set_location_assignment PIN_K12 -to state_led[0]
+set_location_assignment PIN_J14 -to trig
+set_location_assignment PIN_N15 -to btn_led[0]
+set_location_assignment PIN_N14 -to btn_led[1]
+set_location_assignment PIN_M14 -to btn_led[2]
+set_location_assignment PIN_M12 -to btn_led[3]
+set_location_assignment PIN_D12 -to btn_led[4]
+set_location_assignment PIN_C15 -to btn_led[5]
+set_location_assignment PIN_L15 -to clk_led
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -5.700
+TNS   : -252.076
+
+Type  : Slow 1200mV 85C Model Setup 'state_convert:state_convert_inst|signal'
+Slack : -0.351
+TNS   : -0.677
+
+Type  : Slow 1200mV 85C Model Hold 'state_convert:state_convert_inst|signal'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -124.934
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state_convert:state_convert_inst|signal'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -5.150
+TNS   : -227.552
+
+Type  : Slow 1200mV 0C Model Setup 'state_convert:state_convert_inst|signal'
+Slack : -0.239
+TNS   : -0.393
+
+Type  : Slow 1200mV 0C Model Hold 'state_convert:state_convert_inst|signal'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -124.934
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state_convert:state_convert_inst|signal'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.499
+TNS   : -51.050
+
+Type  : Fast 1200mV 0C Model Setup 'state_convert:state_convert_inst|signal'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'state_convert:state_convert_inst|signal'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -88.065
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state_convert:state_convert_inst|signal'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

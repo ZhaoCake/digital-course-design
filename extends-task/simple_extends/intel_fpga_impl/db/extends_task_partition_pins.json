@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "seg7_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "speed_disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mode_led",
+					"strict" : false
+				},
+				{
+					"name" : "state_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "state_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "state_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_led",
+					"strict" : false
+				},
+				{
+					"name" : "trig",
+					"strict" : false
+				},
+				{
+					"name" : "spd_up",
+					"strict" : false
+				},
+				{
+					"name" : "spd_down",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "mode",
+					"strict" : false
+				},
+				{
+					"name" : "M",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

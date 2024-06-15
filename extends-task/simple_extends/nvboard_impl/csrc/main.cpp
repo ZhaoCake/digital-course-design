@@ -8,9 +8,10 @@ void nvboard_bind_all_pins(TOP_NAME* top);
 
 static void single_cycle() {
   dut.clk = 0; dut.eval();
-  std::this_thread::sleep_for(std::chrono::milliseconds(1)); 
+  // 1/24Mhz = 41.67ns
+  // std::this_thread::sleep_for(std::chrono::nanoseconds(42));
   dut.clk = 1; dut.eval();
-  std::this_thread::sleep_for(std::chrono::milliseconds(1)); // 2ms per cycle, 500Hz
+  // std::this_thread::sleep_for(std::chrono::nanoseconds(42));
 }
 
 static void reset(int n) {
