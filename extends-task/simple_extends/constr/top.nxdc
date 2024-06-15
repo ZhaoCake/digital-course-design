@@ -1,0 +1,11 @@
+top=top
+
+M (SW0)
+mode (SW1)
+rst (BTNC)
+trig (BTNL)
+spd_up (BTNU)
+spd_down (BTND)
+seg7_out (SEG0G, SEG0F, SEG0E, SEG0D, SEG0C, SEG0B, SEG0A)
+speed_disp (SEG1G, SEG1F, SEG1E, SEG1D, SEG1C, SEG1B, SEG1A)
+mode_led (LD0)
